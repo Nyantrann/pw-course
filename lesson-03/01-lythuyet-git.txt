@@ -1,0 +1,4 @@
+git commit --amend là lệnh dùng để commit lại message bị sai
+git commit --amend -m”<message>” thay thế message cũ
+git restore --staged <file> thu hồi file từ staging về working
+git reset HEAD~1. thu hồi file từ repo về working
