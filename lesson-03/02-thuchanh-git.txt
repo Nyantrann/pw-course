@@ -1,0 +1,46 @@
+Tạo folder demo
+a, tạo 3 file 
+-local: file1, file2, file3
+-working: file1, file2, file3
+-staging:
+-repo:
+b. Chạy lệnh: git init //khởi tạo git
+-local:file1, file2, file3
+-working file: file1, file2, file3 
+-staging:
+-repo:
+c. Chạy lệnh: git commit -m”init project”
+-local: file1, file2, file3
+-working file: file1, file2, file3 //chưa add file
+-staging:
+-repo:
+d. Chạy lệnh: git add file1
+-local: file1, file2, file3
+-working file: file2, file3
+-staging: file1
+-repo:
+e. Chạy lệnh: git commit -m”add file”
+-local: file1, file2, file3
+-working file: file2, file3
+-staging: 
+-repo:  file1  //commit 1 
+f. Chạy lệnh: git add .
+-local: file1, file2, file3
+-working file: 
+-staging: file2, file3
+-repo: file1  //commit 1 
+g. Chạy lệnh: git restore --staged file2 //thu hồi file2
+-local: file1, file2, file3
+-working file: file2
+-staging: file3
+-repo: file1  //commit 1 
+h. Chạy lệnh: git commit -m”add all files”
+-local: file1, file2, file3
+-working file: file2
+-staging: 
+-repo: file1, file 3 //commit 1 add file, commit 2 add all file
+i. Chạy lệnh: git reset HEAD~1
+-local: file1, file2, file3
+-working file: file2,file3  //commit 2 bị hủy( file3)
+-staging:
+-repo: file1  //commit 1 
