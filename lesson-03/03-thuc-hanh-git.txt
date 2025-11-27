@@ -1,0 +1,63 @@
+a. Chạy lệnh git init
+-local: demo
+-working file: demo
+-staging:
+-repo:
+b. Tạo file file1.txt, file2.txt, oops/file3.txt.
+-local: demo
+         ⌊ file1.txt
+         ⌊ fil2.txt
+         oops
+          ⌊ file3.txt
+-working file: demo
+         ⌊ file1.txt
+         ⌊ fil2.txt
+         oops
+          ⌊ file3.txt
+-staging:
+-repo:
+c. Thêm file .gitignore, thêm vào 2 dòng:
+   i. file1.txt
+   ii. oops/
+-local: demo
+        ⌊ file1.txt
+        ⌊ fil2.txt
+         oops
+           ⌊ file3.txt
+        ⌊ .gitignore file1.txt, oops/
+          
+-working file: demo
+        ⌊ file1.txt
+        ⌊ fil2.txt
+         oops
+           ⌊ file3.txt
+        ⌊ .gitignore file1.txt, oops/
+-staging:
+-repo:
+d. Chạy lệnh: git add .
+-local: demo
+        ⌊ file1.txt
+        ⌊ fil2.txt
+         oops
+           ⌊ file3.txt
+        ⌊ .gitignore file1.txt, oops/
+          
+-working file: demo
+               ⌊ file2.txt
+               ⌊ .gitignore file1.txt, oops/
+-staging:
+-repo:
+e. Chạy lệnh: git commit -m"init project"
+-local: demo
+        ⌊ file1.txt
+        ⌊ fil2.txt
+         oops
+           ⌊ file3.txt
+        ⌊ .gitignore file1.txt, oops/
+          
+-working file: demo
+               ⌊ file2.txt
+               ⌊ .gitignore file1.txt, oops/
+-staging:  
+-repo: demo  //commit1
+        ⌊ fil2.txt
