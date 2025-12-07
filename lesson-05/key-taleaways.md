@@ -5,4 +5,4 @@
 ● CSS selector
 ● Playwright selector
 - XPath : tương đối và tuyệt đối, thường sẽ dùng tương đối. 
-- Playwright
+- Playwright 
